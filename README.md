@@ -100,5 +100,8 @@ Ngoài ra, hệ thống còn có giao diện quản trị giúp quản lý sản
 * Xây dựng ứng dụng di động đồng bộ với website.
 * Bổ sung chatbot hỗ trợ khách hàng.
 
+## 📬 **Liên hệ**  
+- **Email**: [vhanh1366@gmail.com]  
+
 ---
 
