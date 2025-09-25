@@ -82,7 +82,9 @@ Ngoài ra, hệ thống còn có giao diện quản trị giúp quản lý sản
 
 ![Trang chủ](Home.png)
 ![Danh sách sản phẩm](Product.png)
-![Thanh toán qua Stripe](Picture3.png)
+![Giới thiệu](About.png)
+![Bài viết](Blog.png)
+![Liên hệ](Contact.png)
 
 ---
 
