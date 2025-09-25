@@ -80,8 +80,8 @@ Ngoài ra, hệ thống còn có giao diện quản trị giúp quản lý sản
 
 ## 📸 Hình ảnh minh họa
 
-![Trang chủ](Picture1.png)
-![Danh sách sản phẩm](Picture2.png)
+![Trang chủ](Home.png)
+![Danh sách sản phẩm](Product.png)
 ![Thanh toán qua Stripe](Picture3.png)
 
 ---
