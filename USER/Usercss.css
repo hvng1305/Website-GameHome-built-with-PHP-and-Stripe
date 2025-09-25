@@ -1,0 +1,385 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #888;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons a img {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.icons a img:hover {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation li a {
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation li a:hover {
+    color: #00ff00;
+}
+
+/* User Dropdown */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #222;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Profile Header */
+.profile-header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-header .breadcrumb {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.profile-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Profile Info */
+.profile-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #f8f9fa;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: -50px auto 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề chung */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00ff00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Profile Container */
+/* Profile Wrapper */
+.profile-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Căn giữa các phần tử */
+    align-items: flex-start; /* Đảm bảo các phần tử bắt đầu từ đỉnh */
+}
+
+/* Profile Container */
+.profile-container {
+    background: #252525;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px; /* Chiều rộng cố định */
+    flex-shrink: 0; /* Ngăn không cho co lại */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+}
+
+.profile-container h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #00ff00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-container label {
+    font-size: 14px;
+    color: #00ff00;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.profile-container input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.profile-container input:focus {
+    border-color: #00ff00;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+.profile-container button {
+    padding: 12px;
+    background: linear-gradient(45deg, #00ff00, #00cc00);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.profile-container button:hover {
+    background: linear-gradient(45deg, #00cc00, #009900);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+}
+
+/* Message */
+.message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.message.success {
+    background: #00cc00;
+}
+
+.message.error {
+    background: #ff3333;
+}
+
+/* Order History */
+.order-history {
+    background: #252525;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1; /* Chiếm không gian còn lại */
+    max-width: 700px; /* Giới hạn chiều rộng tối đa */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.order-history:hover {
+    transform: translateY(-5px);
+}
+
+.order-history h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #00ff00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.order-history table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.order-history th {
+    background: linear-gradient(45deg, #00ff00, #00cc00);
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.order-history th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.order-history th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.order-history td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.order-history tr:last-child td {
+    border-bottom: none;
+}
+
+.order-history a {
+    color: #00ff00;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.order-history a:hover {
+    color: #00cc00;
+    text-decoration: underline;
+}
+
+/* User Container */
+.user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.user-box {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.user-box h2 {
+    margin-bottom: 15px;
+}
+
+.user-box label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+.user-box button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: #00ff00;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user-box button:hover {
+    background: #009900;
+}
+
+.user-box p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.user-box a {
+    color: #00ff00;
+    font-weight: bold;
+}
+

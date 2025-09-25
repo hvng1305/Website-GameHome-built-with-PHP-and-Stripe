@@ -1,0 +1,313 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #888;
+}
+.logo img {
+    width: 125px; /* Chiều rộng của logo */
+    height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+
+.icons {
+    display: flex; /* Sắp xếp các biểu tượng theo hàng ngang */
+    gap: 15px; /* Tạo khoảng cách giữa các biểu tượng */
+    justify-content: center; /* Canh giữa các biểu tượng theo chiều ngang */
+    align-items: center; /* Canh giữa các biểu tượng theo chiều dọc */
+}
+
+.icons a img {
+    width: 24px; /* Đặt kích thước cố định */
+    height: 24px; /* Đặt chiều cao cố định */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng */
+}
+
+.icons a img:hover {
+    filter: brightness(1.5); /* Làm sáng hơn khi di chuột vào */
+    transform: scale(1.1); /* Tăng nhẹ kích thước khi di chuột vào */
+}
+
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Tăng khoảng cách giữa các mục */
+}
+
+.navigation li a {
+    font-size: 16px; /* Tăng kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu */
+}
+
+.navigation li a:hover {
+    color: #00ff00; /* Màu sáng hơn khi di chuyển chuột vào */
+}
+
+/* User */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Xuất hiện ngay bên dưới icon */
+    right: 0;
+    background-color: #222;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* Hiển thị dropdown khi hover vào user icon */
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Giỏ hàng Header */
+.cart-header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cart-header .breadcrumb {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.cart-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.cart-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+}
+
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cart-left {
+    width: 65%;
+    border-radius: 10px; /* Bo góc */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.cart-right {
+    width: 30%;
+    padding: 20px;
+    background: #f8f8f8;
+    text-align: center;
+    border-radius: 10px; /* Bo góc */
+    border: 1px solid #ddd; /* Viền nhẹ */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    font-weight: bold;
+    background: #f0f0f0;
+}
+
+.cart-table th.left-align {
+    text-align: left;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-info img {
+    width: 50px;
+    height: auto;
+}
+
+.game-name {
+    font-weight: bold;
+    display: block;
+}
+
+.game-price {
+    color: #666;
+    display: block;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+hr {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.remove {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    background: #111;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #333;
+}
+
+
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Trải đều cột */
+    align-items: flex-start; /* Căn đều theo chiều dọc */
+    flex-wrap: nowrap; /* Không cho xuống dòng */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    width: 25%; /* Đảm bảo mỗi cột chiếm 1/4 không gian */
+    min-width: 200px; /* Giữ kích thước tối thiểu để tránh bị co */
+    padding: 10px;
+    text-align: left;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ff9800;
+}
+
+/* Phần dưới của footer */
+.footer-bottom {
+    background: #111;
+    padding: 10px 0;
+    margin-top: 20px;
+}

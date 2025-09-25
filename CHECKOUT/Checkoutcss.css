@@ -1,0 +1,341 @@
+/* General Reset */
+body {
+    margin: 0;
+   
+    color: white;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #888;
+}
+.logo img {
+    width: 125px; /* Chiều rộng của logo */
+    height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+
+.icons {
+    display: flex; /* Sắp xếp các biểu tượng theo hàng ngang */
+    gap: 15px; /* Tạo khoảng cách giữa các biểu tượng */
+    justify-content: center; /* Canh giữa các biểu tượng theo chiều ngang */
+    align-items: center; /* Canh giữa các biểu tượng theo chiều dọc */
+}
+
+.icons a img {
+    width: 24px; /* Đặt kích thước cố định */
+    height: 24px; /* Đặt chiều cao cố định */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng */
+}
+
+.icons a img:hover {
+    filter: brightness(1.5); /* Làm sáng hơn khi di chuột vào */
+    transform: scale(1.1); /* Tăng nhẹ kích thước khi di chuột vào */
+}
+
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Tăng khoảng cách giữa các mục */
+}
+
+.navigation li a {
+    font-size: 16px; /* Tăng kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu */
+}
+
+.navigation li a:hover {
+    color: #00ff00; /* Màu sáng hơn khi di chuyển chuột vào */
+}
+
+/* User */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Xuất hiện ngay bên dưới icon */
+    right: 0;
+    background-color: #222;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* Hiển thị dropdown khi hover vào user icon */
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Phần tiêu đề thanh toán */
+.checkout-header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.checkout-header .breadcrumb {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.checkout-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Phần bo card*/
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 20px auto;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-left {
+    width: 60%;
+    padding-right: 20px;
+    color: #000;
+}
+
+.cart-right {
+    width: 35%;
+    background: white;
+    padding: 20px;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th.right-align {
+    text-align: right;
+}
+
+td.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-info img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #28a745;
+    text-align: right;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.payment-option {
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+
+.payment-option img {
+    width: 50px;
+    height: 50px;
+}
+
+.payment-option:hover, .payment-option.selected {
+    border: 2px solid #007bff;
+    background: #e9f2ff;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.payment-option {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.payment-option img {
+    width: 50px;
+    height: auto;
+}
+
+.payment-option span {
+    display: block;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.payment-option:hover,
+.payment-option.active {
+    border-color: #007BFF;
+    background: #f8f9fa;
+    box-shadow: 0px 3px 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Form Payment Info */
+.payment-info {
+    display: none;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    margin-top: 10px;
+}
+
+.payment-info img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.payment-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.payment-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Form Inputs */
+.payment-info input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+/* Nút thanh toán */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+}
+
+.product-info img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.product-download a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-download a:hover {
+    text-decoration: underline;
+}
+

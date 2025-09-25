@@ -1,0 +1,310 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    color: #333;
+    background: #f4f4f4;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #888;
+}
+.logo img {
+    width: 125px; /* Chiều rộng của logo */
+    height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+
+.icons {
+    display: flex; /* Sắp xếp các biểu tượng theo hàng ngang */
+    gap: 15px; /* Tạo khoảng cách giữa các biểu tượng */
+    justify-content: center; /* Canh giữa các biểu tượng theo chiều ngang */
+    align-items: center; /* Canh giữa các biểu tượng theo chiều dọc */
+}
+
+.icons a img {
+    width: 24px; /* Đặt kích thước cố định */
+    height: 24px; /* Đặt chiều cao cố định */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng */
+}
+
+.icons a img:hover {
+    filter: brightness(1.5); /* Làm sáng hơn khi di chuột vào */
+    transform: scale(1.1); /* Tăng nhẹ kích thước khi di chuột vào */
+}
+
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Tăng khoảng cách giữa các mục */
+}
+
+.navigation li a {
+    font-size: 16px; /* Tăng kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu */
+}
+
+.navigation li a:hover {
+    color: #00ff00; /* Màu sáng hơn khi di chuyển chuột vào */
+}
+
+/* User */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Xuất hiện ngay bên dưới icon */
+    right: 0;
+    background-color: #222;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* Hiển thị dropdown khi hover vào user icon */
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Blog Section */
+.blog-header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.blog-header .breadcrumb {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.blog-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blog-container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+    color: #000;
+}
+
+.blog-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.blog-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.blog-detail {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-detail h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000 !important; /* Đảm bảo chữ có màu đen */
+}
+
+
+
+.blog-detail .date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.blog-detail .blog-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Phần thông tin liên hệ */
+.blog-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #f8f9fa;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: -50px auto 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blog-detail p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Trải đều cột */
+    align-items: flex-start; /* Căn đều theo chiều dọc */
+    flex-wrap: nowrap; /* Không cho xuống dòng */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column {
+    width: 25%; /* Đảm bảo mỗi cột chiếm 1/4 không gian */
+    min-width: 200px; /* Giữ kích thước tối thiểu để tránh bị co */
+    padding: 10px;
+    text-align: left;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ff9800;
+}
+
+/* Phần dưới của footer */
+.footer-bottom {
+    background: #111;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive: Khi màn hình nhỏ hơn 1024px, cho phép xuống dòng */
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ chỗ */
+        justify-content: center; /* Căn giữa khi xuống dòng */
+    }
+
+    .footer-column {
+        width: 45%; /* 2 cột mỗi hàng */
+        text-align: center;
+    }
+}
+
+/* Khi màn hình nhỏ hơn 600px, hiển thị mỗi cột 100% */
+@media screen and (max-width: 600px) {
+    .footer-column {
+        width: 100%; /* Mỗi cột chiếm toàn bộ chiều ngang */
+    }
+}
