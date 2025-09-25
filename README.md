@@ -80,11 +80,18 @@ Ngoài ra, hệ thống còn có giao diện quản trị giúp quản lý sản
 
 ## 📸 Hình ảnh minh họa
 
-![Trang chủ](Home.png)
-![Danh sách sản phẩm](Product.png)
-![Giới thiệu](About.png)
-![Bài viết](Blog.png)
-![Liên hệ](Contact.png)
+
+<p align="center">
+  <img src="Home.png" alt="Trang chủ" width="300">
+  <img src="Product.png" alt="Danh sách sản phẩm" width="300">
+  <img src="About.png" alt="Giới thiệu" width="300">
+</p>
+
+<p align="center">
+  <img src="Blog.png" alt="Bài viết" width="300">
+  <img src="Contact.png" alt="Liên hệ" width="300">
+</p>
+
 
 ---
 
