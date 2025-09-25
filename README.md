@@ -80,16 +80,15 @@ Ngoài ra, hệ thống còn có giao diện quản trị giúp quản lý sản
 
 ## 📸 Hình ảnh minh họa
 
-
 <p align="center">
-  <img src="Home.png" alt="Trang chủ" width="300">
-  <img src="Product.png" alt="Danh sách sản phẩm" width="300">
-  <img src="About.png" alt="Giới thiệu" width="300">
+  <img src="Home.png" alt="Trang chủ" height="200">
+  <img src="Product.png" alt="Danh sách sản phẩm" height="200">
+  <img src="About.png" alt="Giới thiệu" height="200">
 </p>
 
 <p align="center">
-  <img src="Blog.png" alt="Bài viết" width="300">
-  <img src="Contact.png" alt="Liên hệ" width="300">
+  <img src="Blog.png" alt="Bài viết" height="200">
+  <img src="Contact.png" alt="Liên hệ" height="200">
 </p>
 
 
